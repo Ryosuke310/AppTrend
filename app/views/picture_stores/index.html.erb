@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="center">みんなのスマホ画面</h1>
+
+
+
+  <tbody>
+    <% @picture_stores.each do |picture_store| %>
+      <div class="img_layout">
+        趣味<br>
+        <p class="font_big"><%= picture_store.store_name %></p>
+        <br>
+        <%= image_tag picture_store.picture.url, :size =>'300x500' %>
+      </div>
+        <!--<td><%= link_to '編集', edit_picture_store_path(picture_store) %></td>-->
+        <!--<td><%= link_to '削除', picture_store, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+    <div class="clearfix"></div>
+  </tbody>
+</table>
+
+<br>
+
+<div class="square_btn">
+  <%= link_to '自分の画面も投稿したい！', new_picture_store_path %>
+</div>

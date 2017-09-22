@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+.clearfix{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+
+.img_layout{
+    width:33%;
+    float:left;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.center{
+    text-align: center;
+}
+
+.font_big{
+    font-size: 150%;
+}
+#particles-js{
+width: 100%;
+height: 100%;
+background-color: black;
+position: relative;
+}
+#title{
+    display: block;
+    position: absolute;
+    color:white;
+    font-size: 220%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#title p{
+    font-weight: bold;
+    font-size: 75%;
+}
+#title a{
+    text-decoration: none;
+    color:white;
+}
+/*ボタン*/
+.square_btn{
+    margin-top: 50px;;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.square_btn a{
+    text-decoration: none;
+    color: white;
+}
+.square_btn a:hover{
+    background-color: transparent;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
